@@ -24,45 +24,31 @@ function Techstack() {
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
         <CgCPlusPlus />
+        <h4>C++</h4>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
+        <h4>Javascript</h4>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiNodejs />
+        <h4>NodeJS</h4>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiReact />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
+        <h4>ReactJS</h4>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiMongodb />
+        <h4>MongoDB</h4>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiNextdotjs />
+        <h4>NextJS</h4>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
+        <h4>Github</h4>
       </Col>
     </Row>
   );

@@ -22,6 +22,14 @@ button:focus {
   box-shadow: none !important;
 }
 
+.typeWriterText{
+  gap: 10px;
+}
+
+.typeWriterText > h1{
+  margin-bottom: 0px !important;
+}
+
 /* --------- */
 /*  Preloader */
 /* --------- */
