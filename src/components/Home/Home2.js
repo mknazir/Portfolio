@@ -1,115 +1,89 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
-import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import Col from 'react-bootstrap/Col';
+import Nav from 'react-bootstrap/Nav';
+import Row from 'react-bootstrap/Row';
+import Tab from 'react-bootstrap/Tab';
 
 function Home2() {
   return (
-    <Container fluid className="home-about-section" id="about">
-      <Container>
-        <Row>
-          <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
-            </h1>
-            <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
-              <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> C++, Javascript and Go. </b>
-              </i>
-              <br />
-              <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
-              </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
-            </p>
+    <div className='workexp'>
+      <h1 className="project-heading">Where I’ve <span className='purple'>Worked</span></h1>
+      <Tab.Container defaultActiveKey="first">
+        <Row className="workTab">
+          <Col sm={3}>
+            <Nav className="flex-column tabList">
+              <Nav.Item className='tabContent'>
+                <Nav.Link eventKey="first" className='tabItem'>
+                  10xOkr
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item className='tabContent'>
+                <Nav.Link eventKey="second" className='tabItem'>
+                  10xOkr
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item className='tabContent'>
+                <Nav.Link eventKey="third" className='tabItem'>
+                  UrDoer
+                </Nav.Link>
+              </Nav.Item>
+            </Nav>
           </Col>
-          <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt>
-          </Col>
-        </Row>
-        <Row>
-          <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
-            <p>
-              Feel free to <span className="purple">connect </span>with me
-            </p>
-            <ul className="home-about-social-links">
-              <li className="social-icons">
-                <a
-                  href="https://github.com/soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiFillGithub />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
-                </a>
-              </li>
-            </ul>
+          <Col sm={9}>
+            <Tab.Content>
+              <Tab.Pane className='tabContent' eventKey="first">
+                <h2>Software Engineer 1 <span className='purple'>@10xOkr</span></h2>
+                <div className='Workdesc'>
+                  <div className='bulletPoints'>
+                    Successfully built products from initial development to enterprise-ready status while focusing on rendering optimization.
+                  </div>
+                  <div className='bulletPoints'>
+                    Designed and executed a comprehensive Demo OKR framework, showcasing all product functionalities to enhance user understanding and drive product adoption, resulting in a 40% increase in user engagement and a 25% decrease in user onboarding time.
+                  </div>
+                  <div className='bulletPoints'>
+                    Develop and Modify several APIs such as Role-Based Access, Filter Goals, and Check-in History.
+                  </div>
+                  <div className='bulletPoints'>
+                    Major Bug Fixes in both UI and Backend, which significantly enhance the product’s stability, user experience, and overall performance.
+                  </div>
+                </div>
+              </Tab.Pane>
+              <Tab.Pane className='tabContent' eventKey="second">
+                <h2>Front End Developer Intern <span className='purple'>@10xOkr</span></h2>
+                <div className='Workdesc'>
+                  <div className='bulletPoints'>
+                    Implementing an iterative process for UI enhancements, actively seeking to improve the user interface by 40%
+                    through continuous feedback and adjustments
+                  </div>
+                  <div className='bulletPoints'>
+                    Implemented and streamlined a performance review system, reducing review cycle time by 50% and improving
+                    employee satisfaction by 25%.
+                  </div>
+                  <div className='bulletPoints'>
+                    Seamlessly integrated the frontend with APIs, significantly amplifying the platform’s functionality.
+                  </div>
+                </div>
+              </Tab.Pane>
+              <Tab.Pane className='tabContent' eventKey="third">
+                <h2>Freelancer <span className='purple'>@UrDoer (formerly TutorPoint)</span></h2>
+                <div className='Workdesc'>
+                  <div className='bulletPoints'>
+                    Completed 200+ projects in Web Development, Database Management, Wordpress, and solved complex DSA
+                    problems.
+                  </div>
+                  <div className='bulletPoints'>
+                    Maintained a strong 4.3 out of 5 rating, reflecting consistent project excellence and client satisfaction.
+                  </div>
+                  <div className='bulletPoints'>
+                    Proven ability to adapt to diverse project environments and consistently meet or exceed client expectations.
+                  </div>
+                </div>
+              </Tab.Pane>
+            </Tab.Content>
           </Col>
         </Row>
-      </Container>
-    </Container>
+      </Tab.Container>
+    </div>
   );
 }
+
 export default Home2;
