@@ -10,7 +10,7 @@ function Home2() {
       <h1 className="project-heading">Where I’ve <span className='purple'>Worked</span></h1>
       <Tab.Container defaultActiveKey="first">
         <Row className="workTab">
-          <Col sm={3}>
+          <Col sm={3} className='tabListSection'>
             <Nav className="flex-column tabList">
               <Nav.Item className='tabContent'>
                 <Nav.Link eventKey="first" className='tabItem'>
@@ -29,7 +29,7 @@ function Home2() {
               </Nav.Item>
             </Nav>
           </Col>
-          <Col sm={9}>
+          <Col sm={9} className='tabContentSection'>
             <Tab.Content>
               <Tab.Pane className='tabContent' eventKey="first">
                 <h2>Software Engineer 1 <span className='purple'>@10xOkr</span></h2>

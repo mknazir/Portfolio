@@ -841,3 +841,20 @@ button:focus {
   font-size: 15px;
   color: rgba(128, 119, 134, 0.675);
 }
+
+@media (max-width: 767px) {
+  .workTab {
+    width: 85%;
+    height: auto;
+  }
+  .tabListSection{
+    display: flex;
+    justify-content: center;
+  }
+  .tabList{
+    width: 60% !important;
+  }
+  .tabContentSection{
+    margin-top: 25px !important;
+  }
+}
