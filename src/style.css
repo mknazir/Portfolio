@@ -821,13 +821,23 @@ button:focus {
 }
 
 .bulletPoints{
-  display: flex;
-  align-items: flex-start;
+  display: grid;
+  grid-auto-flow: column;
   gap: 10px;
   color: #a588c0;
+}
+
+.bulletPoints > svg{
+  margin-top: 5px;
 }
 
 .tabContent > h2{
   color: white;
   font-size: 25px;
+  margin: 0px;
+}
+
+.tabContent > h3{
+  font-size: 15px;
+  color: rgba(128, 119, 134, 0.675);
 }

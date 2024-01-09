@@ -39,9 +39,9 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <h2 className="logoText">
-            <span>{'<Mk'}</span>
-              {'nazir/>'}
+          <h2 className="logoText">{'<'}
+            <span>{'Mknazir'}</span>
+              {'7/>'}
           </h2>
         </Navbar.Brand>
         <Navbar.Toggle
