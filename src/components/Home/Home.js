@@ -26,7 +26,7 @@ function Home() {
               </h1>
 
               <div style={{display:"flex", padding: 50, textAlign: "left" , alignItems:"center"}} className="typeWriterText">
-                <h1>A</h1> <Type />
+                <Type />
               </div>
             </Col>
 
