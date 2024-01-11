@@ -185,6 +185,10 @@ button:focus {
   padding: 0.8rem 1rem !important;
 }
 
+.contactCard{
+  cursor: pointer;
+}
+
 @media (max-width: 767px) {
   .nav-link {
     padding: 0.7rem 1rem !important;

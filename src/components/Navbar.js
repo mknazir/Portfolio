@@ -9,6 +9,7 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
+import { MdOutlineContactMail } from "react-icons/md";
 
 import { CgFileDocument } from "react-icons/cg";
 
@@ -71,6 +72,16 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
+                to="/contactus"
+                onClick={() => updateExpanded(false)}
+              >
+                <MdOutlineContactMail style={{ marginBottom: "6px" }} /> Contact Us
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
@@ -91,17 +102,6 @@ function NavBar() {
                 <CgFileDocument style={{ marginBottom: "2px" }} /> <h2 style={{ fontSize: "1.2em" }}>Resume</h2>
               </Nav.Link>
             </Nav.Item>
-
-            {/* <Nav.Item className="fork-btn">
-              <Button
-                href="https://github.com/mknazir/Portfolio"
-                target="_blank"
-                className="fork-btn-inner"
-              >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
-              </Button>
-            </Nav.Item> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
