@@ -32,6 +32,7 @@ button:focus {
 
 .typeWriterText{
   gap: 10px;
+  height: 130px;
 }
 
 .typeWriterText > h1{
@@ -860,4 +861,8 @@ button:focus {
   .tabContentSection{
     margin-top: 25px !important;
   }
+}
+
+.navbar .nav-item .nav-link.active {
+  color: #c770f0 !important;
 }

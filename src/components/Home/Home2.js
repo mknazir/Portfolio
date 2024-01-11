@@ -14,12 +14,12 @@ function Home2() {
             <Nav className="flex-column tabList">
               <Nav.Item className='tabContent'>
                 <Nav.Link eventKey="first" className='tabItem'>
-                  10xOkr
+                  10xOkr (SDE-I)
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item className='tabContent'>
                 <Nav.Link eventKey="second" className='tabItem'>
-                  10xOkr
+                  10xOkr (Intern)
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item className='tabContent'>
