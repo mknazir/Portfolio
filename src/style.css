@@ -772,11 +772,16 @@ button:focus {
 
 .workTab{
   width: 50%;
-  height: 20rem;
+  height: 25rem;
   margin: 5rem auto !important;
 }
 .tabContent{
   text-align: start !important;
+}
+
+.tabContentSection{
+  height: 100%;
+  margin-top: 25px !important;
 }
 
 .tabList{
@@ -859,6 +864,7 @@ button:focus {
     width: 60% !important;
   }
   .tabContentSection{
+    height: fit-content;
     margin-top: 25px !important;
   }
 }

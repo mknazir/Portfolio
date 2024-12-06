@@ -14,16 +14,21 @@ function Home2() {
             <Nav className="flex-column tabList">
               <Nav.Item className='tabContent'>
                 <Nav.Link eventKey="first" className='tabItem'>
-                  10xOkr (SDE-I)
+                  Enso Innovation Lab (SDE-I)
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item className='tabContent'>
                 <Nav.Link eventKey="second" className='tabItem'>
-                  10xOkr (Intern)
+                  10xOkr (SDE-I)
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item className='tabContent'>
                 <Nav.Link eventKey="third" className='tabItem'>
+                  10xOkr (Intern)
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item className='tabContent'>
+                <Nav.Link eventKey="fourth" className='tabItem'>
                   UrDoer
                 </Nav.Link>
               </Nav.Item>
@@ -31,9 +36,27 @@ function Home2() {
           </Col>
           <Col sm={9} className='tabContentSection'>
             <Tab.Content>
-              <Tab.Pane className='tabContent' eventKey="first">
+            <Tab.Pane className='tabContent' eventKey="first">
+                <h2>Software Engineer 1 <span className='purple'>@enso innovation lab</span></h2>
+                <h3>Jan 2024 - Present</h3>
+                <div className='Workdesc'>
+                  <div className='bulletPoints'>
+                    <FaRegHandPointRight/>Developed a therapist management portal for a mental health platform, empowering therapists to efficiently manage profiles, schedules, and client interactions for over 40+ active therapists and 300 Users. 
+                  </div>
+                  <div className='bulletPoints'>
+                  <FaRegHandPointRight/>Engineered a conflict-free slot management system for normal and pre-consultation sessions, ensuring seamless booking for therapists and clients, reducing scheduling conflicts by 40%.
+                  </div>
+                  <div className='bulletPoints'>
+                  <FaRegHandPointRight/>Implemented real-time web-based notifications for appointment bookings, rescheduling, and reminders 30 minutes before sessions, enabling seamless meeting access with a dynamic "Join Meet" button and reducing no-shows by 25%.
+                  </div>
+                  <div className='bulletPoints'>
+                  <FaRegHandPointRight/>Utilized AWS S3 to securely store therapist and user images, as well as report PDFs, ensuring efficient file management and seamless access across the platform.
+                  </div>
+                </div>
+              </Tab.Pane>
+              <Tab.Pane className='tabContent' eventKey="second">
                 <h2>Software Engineer 1 <span className='purple'>@10xOkr</span></h2>
-                <h3>June 2023 - Present</h3>
+                <h3>June 2023 - Jan 2024</h3>
                 <div className='Workdesc'>
                   <div className='bulletPoints'>
                     <FaRegHandPointRight/>Successfully built products from initial development to enterprise-ready status while focusing on rendering optimization.
@@ -49,7 +72,7 @@ function Home2() {
                   </div>
                 </div>
               </Tab.Pane>
-              <Tab.Pane className='tabContent' eventKey="second">
+              <Tab.Pane className='tabContent' eventKey="third">
                 <h2>Front End Developer Intern <span className='purple'>@10xOkr</span></h2>
                 <h3>Jan 2023 - May 2023</h3>
                 <div className='Workdesc'>
@@ -66,7 +89,7 @@ function Home2() {
                   </div>
                 </div>
               </Tab.Pane>
-              <Tab.Pane className='tabContent' eventKey="third">
+              <Tab.Pane className='tabContent' eventKey="fourth">
                 <h2>Freelancer <span className='purple'>@UrDoer (formerly TutorPoint)</span></h2>
                 <h3>Jan 2022 - Present</h3>
                 <div className='Workdesc'>

@@ -38,7 +38,7 @@ function ConnectMe() {
           </div>
         </OverlayTrigger>
       </Col>
-      <Col xs={4} md={3} className="tech-icons contactCard" onClick={() => handleIconClick("https://www.instagram.com/mknazir_/")}>
+      <Col xs={4} md={3} className="tech-icons contactCard" onClick={() => handleIconClick("https://www.instagram.com/mknazir7/")}>
         <OverlayTrigger
           placement="bottom"
           overlay={renderTooltip("Follow on Instagram")}

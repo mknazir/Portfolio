@@ -16,7 +16,8 @@ import {
   SiExpress,
   SiRedux,
   SiHtml5,
-  SiTailwindcss
+  SiTailwindcss,
+  SiSocketdotio
 } from "react-icons/si";
 
 function Techstack() {
@@ -41,6 +42,10 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <DiMongodb />
         <h4>MongoDB</h4>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiSocketdotio />
+        <h4>Socket.io</h4>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiRedux />
